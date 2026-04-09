@@ -13,3 +13,6 @@
 - Etapa 4 
     Agrega a todo el sito de web para que responsiv
     util
+
+-Etapa 5
+agrega que se actulice actomaticamente el catalogo de peliculas y que se pueda cambiar de modo claro a modo oscuro

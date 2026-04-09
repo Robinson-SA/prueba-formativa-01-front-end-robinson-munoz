@@ -1,11 +1,34 @@
+:root {
+    --bg: #000000;
+    --surface: #111111;
+    --surface-alt: #222222;
+    --text: #FFFFFF;
+    --text-muted: #CCCCCC;
+    --accent: #FF6600;
+    --accent-text: #000000;
+    --border: #333333;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #000000; /* Negro */
-    color: #FFFFFF; /* Blanco para texto */
+    background-color: var(--bg);
+    color: var(--text);
     margin: 0;
     padding: 0;
     line-height: 1.6;
     font-size: 16px;
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+body.light-mode {
+    --bg: #FFFFFF;
+    --surface: #F8F3EB;
+    --surface-alt: #FFFFFF;
+    --text: #111111;
+    --text-muted: #333333;
+    --accent: #FF6600;
+    --accent-text: #000000;
+    --border: #DDDDDD;
 }
 
 main {
@@ -20,11 +43,40 @@ section {
 }
 
 header {
-    background-color: #FF6600; /* Naranja brillante */
-    color: #FFFFFF; /* Blanco */
+    background-color: var(--accent);
+    color: var(--accent-text);
     text-align: center;
     padding: 2rem 1rem;
     box-shadow: 0 2px 4px rgba(255, 102, 0, 0.3);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#themeToggle {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--accent-text);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+#themeToggle:hover,
+#themeToggle:focus-visible {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+    outline: none;
+}
+
+#themeToggle:focus-visible {
+    box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.35);
 }
 
 h1 {
@@ -43,15 +95,15 @@ h2 {
 #hero {
     text-align: center;
     padding: 3rem 1rem;
-    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); /* Gradiente negro sutil */
-    border-bottom: 2px solid #FF6600;
+    background: linear-gradient(135deg, var(--bg) 0%, var(--surface-alt) 100%);
+    border-bottom: 2px solid var(--accent);
 }
 
 #about, #schedule {
     padding: 2rem 1rem;
     max-width: 800px;
     margin: 0 auto;
-    background-color: #111111; /* Gris oscuro para contraste */
+    background-color: var(--surface);
     border-radius: 8px;
     margin-bottom: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -77,8 +129,8 @@ li {
 }
 
 .day {
-    background-color: #222;
-    color: #fff;
+    background-color: var(--surface-alt);
+    color: var(--text);
     padding: 1rem;
     text-align: center;
     border-radius: 4px;
@@ -87,12 +139,12 @@ li {
 
 .day:hover {
     transform: scale(1.1);
-    background-color: #333;
+    background-color: var(--surface);
 }
 
 .day.festival {
-    background-color: #FF6600;
-    color: #000;
+    background-color: var(--accent);
+    color: var(--accent-text);
     font-weight: bold;
 }
 
@@ -100,13 +152,14 @@ li {
     text-align: center;
     margin-top: 1rem;
     font-style: italic;
+    color: var(--text-muted);
 }
 
 #catalogo {
     padding: 2rem 1rem;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #111111;
+    background-color: var(--surface);
     border-radius: 8px;
     margin-bottom: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -121,15 +174,16 @@ li {
 }
 
 .pelicula {
-    background-color: #222;
+    background-color: var(--surface-alt);
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.35s ease;
 }
 
 .pelicula:hover {
     transform: translateY(-5px);
+    background-color: var(--surface);
 }
 
 .pelicula img {
@@ -140,12 +194,12 @@ li {
 }
 
 .pelicula h3 {
-    color: #FF6600;
+    color: var(--accent);
     margin: 0.5rem 0;
 }
 
 .pelicula p {
-    color: #ccc;
+    color: var(--text-muted);
     font-size: 0.9rem;
 }
 
