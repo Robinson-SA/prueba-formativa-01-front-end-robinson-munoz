@@ -7,3 +7,9 @@
 
     Agrega animaciones y fechas que sean de un mes y que esten en un grid y ajusta futer 
     Util, mejora de animaciones y se ajusto el futer y las fechas en grid tipo mes
+-Etapa 3 
+    crea una nueva secsion de catalogo de peliculas y agrega la imagenes que estan en carpeta imagenes 
+    Util, agreg de manera correcta las pelicula
+- Etapa 4 
+    Agrega a todo el sito de web para que responsiv
+    util
