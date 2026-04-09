@@ -1,3 +1,9 @@
 -Etapa 1
     Crea un sitio web que promocione un "Festival de peliculas" colores accesibles (AA) con tonalidades blanco y naranja
     Util para la estructura inicial.
+-Etapa 2 
+    Mejora el estilo de pagina manten los colores el fondo de color negro, debe ser responsivi debe ser accesible para todos usuarios
+    Parcial, se craer otro prompt para mejorar el visual de la pagina
+
+    Agrega animaciones y fechas que sean de un mes y que esten en un grid y ajusta futer 
+    Util, mejora de animaciones y se ajusto el futer y las fechas en grid tipo mes
