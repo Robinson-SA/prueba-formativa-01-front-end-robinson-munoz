@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF; /* Blanco */
+    color: #C0392B; /* Naranja oscuro para texto, cumple AA */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #FF6600; /* Naranja brillante */
+    color: #FFFFFF; /* Blanco */
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #FF6600; /* Naranja brillante */
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+#hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #FFF8F0; /* Tono blanco con toque naranja suave */
+}
+
+#about, #schedule {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #FF6600; /* Naranja brillante */
+    color: #FFFFFF; /* Blanco */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media queries para accesibilidad en móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}

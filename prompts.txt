@@ -1,0 +1,3 @@
+-Etapa 1
+    Crea un sitio web que promocione un "Festival de peliculas" colores accesibles (AA) con tonalidades blanco y naranja
+    Util para la estructura inicial.
